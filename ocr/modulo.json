@@ -1,0 +1,274 @@
+{
+    "nome": "sinter-rest-ws-j11",
+    "identificador": "apiwsj11",
+    "sistema": {
+        "numeroVersao": 7,
+        "id": 30,
+        "permiteAlterarIdentificador": false
+    },
+    "flavor": {
+        "numeroVersao": 0,
+        "id": 5
+    },
+    "chaves": [
+        {
+            "id": 15661,
+            "chave": {
+                "id": 1477,
+                "nome": "AMBIENTE",
+                "sigiloso": false
+            }
+        },
+        {
+            "id": 15662,
+            "chave": {
+                "id": 714,
+                "nome": "LEL_ATIVO",
+                "sigiloso": false
+            }
+        },
+        {
+            "id": 15663,
+            "chave": {
+                "id": 723,
+                "nome": "LEL_HOST",
+                "sigiloso": false
+            }
+        },
+        {
+            "id": 15664,
+            "chave": {
+                "id": 703,
+                "nome": "LEL_SINTER_VERSION",
+                "sigiloso": false
+            }
+        },
+        {
+            "id": 15665,
+            "chave": {
+                "id": 704,
+                "nome": "LEL_WS_URL",
+                "sigiloso": false
+            }
+        },
+        {
+            "id": 15666,
+            "chave": {
+                "id": 5597,
+                "nome": "MONGODB_DATABASE_RTD",
+                "sigiloso": false
+            }
+        },
+        {
+            "id": 15667,
+            "chave": {
+                "id": 390,
+                "nome": "MONGODB_HOST",
+                "sigiloso": false
+            }
+        },
+        {
+            "id": 15668,
+            "chave": {
+                "id": 391,
+                "nome": "MONGODB_PASSWORD",
+                "sigiloso": false
+            }
+        },
+        {
+            "id": 15669,
+            "chave": {
+                "id": 392,
+                "nome": "MONGODB_PORT",
+                "sigiloso": false
+            }
+        },
+        {
+            "id": 15670,
+            "chave": {
+                "id": 393,
+                "nome": "MONGODB_USER",
+                "sigiloso": false
+            }
+        },
+        {
+            "id": 15671,
+            "chave": {
+                "id": 6368,
+                "nome": "SENHA_REDE_HOST",
+                "sigiloso": false
+            }
+        },
+        {
+            "id": 15672,
+            "chave": {
+                "id": 6371,
+                "nome": "SENHA_REDE_KEYSTORE_PASS",
+                "sigiloso": false
+            }
+        },
+        {
+            "id": 15673,
+            "chave": {
+                "id": 6372,
+                "nome": "SENHA_REDE_KEYSTORE_PATH",
+                "sigiloso": false
+            }
+        },
+        {
+            "id": 15674,
+            "chave": {
+                "id": 6369,
+                "nome": "SENHA_REDE_SISTEMA",
+                "sigiloso": false
+            }
+        },
+        {
+            "id": 15675,
+            "chave": {
+                "id": 6373,
+                "nome": "SENHA_REDE_TRUSTSTORE_PASS",
+                "sigiloso": false
+            }
+        },
+        {
+            "id": 15676,
+            "chave": {
+                "id": 6374,
+                "nome": "SENHA_REDE_TRUSTSTORE_PATH",
+                "sigiloso": false
+            }
+        },
+        {
+            "id": 15677,
+            "chave": {
+                "id": 6370,
+                "nome": "SENHA_REDE_URL",
+                "sigiloso": false
+            }
+        },
+        {
+            "id": 15678,
+            "chave": {
+                "id": 5600,
+                "nome": "SERIAL_NUMBERS_CERTIFICATES_RTD",
+                "sigiloso": false
+            }
+        },
+        {
+            "id": 15679,
+            "chave": {
+                "id": 742,
+                "nome": "SSL_BYPASS_SERVER_CERT",
+                "sigiloso": false
+            }
+        },
+        {
+            "id": 15680,
+            "chave": {
+                "id": 743,
+                "nome": "SSL_KEYSTORE_PASS",
+                "sigiloso": false
+            }
+        },
+        {
+            "id": 15681,
+            "chave": {
+                "id": 744,
+                "nome": "SSL_KEYSTORE_PATH",
+                "sigiloso": false
+            }
+        },
+        {
+            "id": 15682,
+            "chave": {
+                "id": 745,
+                "nome": "SSL_TRUSTSTORE_PASS",
+                "sigiloso": false
+            }
+        },
+        {
+            "id": 15683,
+            "chave": {
+                "id": 746,
+                "nome": "SSL_TRUSTSTORE_PATH",
+                "sigiloso": false
+            }
+        },
+        {
+            "id": 15684,
+            "chave": {
+                "id": 5375,
+                "nome": "TZ",
+                "sigiloso": false
+            }
+        }
+    ],
+    "volumes": [
+        {
+            "id": 770,
+            "pontoMontagem": "/opt/cert/keystores",
+            "volume": {
+                "id": 64,
+                "nome": "Keystores",
+                "identificador": "keystores",
+                "sigiloso": false
+            }
+        }
+    ],
+    "vhosts": [
+        {
+            "id": 763,
+            "vhost": {
+                "id": 24,
+                "nome": "Default",
+                "identificador": "default"
+            }
+        }
+    ],
+    "tipo": "APLICACAO",
+    "portasPublicasApenasPeloBalanceador": false,
+    "contexto": "/api",
+    "rewriteURL": "/",
+    "possuiRewriteURL": true,
+    "possuiRedirectURL": false,
+    "possuiHealthCheckReadiness": false,
+    "possuiHealthCheckLiveness": false,
+    "aumentoMaximo": 1,
+    "indisponibilidadeMaxima": 1,
+    "timeoutShutdown": 30,
+    "portas": [
+        {
+            "id": 2864,
+            "porta": 9595,
+            "publica": true,
+            "protocolo": "TCP"
+        },
+        {
+            "id": 2377,
+            "porta": 9090,
+            "publica": false,
+            "protocolo": "TCP"
+        },
+        {
+            "id": 2373,
+            "porta": 6789,
+            "publica": false,
+            "protocolo": "TCP"
+        },
+        {
+            "id": 2368,
+            "porta": 8080,
+            "publica": false,
+            "protocolo": "TCP"
+        },
+        {
+            "id": 2372,
+            "porta": 5701,
+            "publica": false,
+            "protocolo": "TCP"
+        }
+    ],
+    "protocoloBackend": "HTTP1",
+    "permiteParalelismo": false
+}
