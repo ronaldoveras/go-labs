@@ -1,33 +1,21 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
 
-type friends struct {
-	data []string
-}
-
-type person struct {
-	name    string
-	friends *friends
-}
-
-func (f *friends) Add(name string) {
-	f.data = append(f.data, name)
-}
-
-func (f *friends) Remove(name string) {
-
-}
+	"github.com/ronaldoveras/go-labs/personAndFriends/model"
+)
 
 func main() {
-	person := new(person)
-	person.friends = new(friends)
-	person.name = "Claúdia"
-	person.friends.Add("Bira")
-	person.friends.Add("Karol")
+	person := new(model.Person)
+	person.Friends = new(model.Friends)
+	person.Name = "Claúdia"
+	person.Friends.Add("Bira")
+	person.Friends.Add("Karol")
+	person.Friends.Add("Katy")
 
-	fmt.Printf("Amigos de %s são: \n", person.name)
-	for _, p := range person.friends.data {
+	fmt.Printf("Amigos de %s são: \n", person.Name)
+	for _, p := range person.Friends.Data {
 		fmt.Println(p)
 	}
 }
